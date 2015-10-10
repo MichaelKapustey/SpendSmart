@@ -31,6 +31,9 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\CategoriesProvider.cs" />
+    <Compile Include="DataAccess\IDataAccessor.cs" />
+    <Compile Include="DataAccess\SpendingProvider.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Spending.cs" />
     <Compile Include="MyClass.cs" />
