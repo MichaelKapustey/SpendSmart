@@ -1,6 +1,7 @@
 ﻿using SpendSmart.DataAccess;
 using SpendSmart.Models;
 using SpendSmart.Universal.Logic;
+using SpendSmart.Universal.Spendings;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -38,9 +39,19 @@ namespace SpendSmart.Universal
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonStatistics_Click(object sender, RoutedEventArgs e)
         {
-            Do();
+           
+        }
+
+        private void ButtonSpendings_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SpendingsPage));
+        }
+
+        private void ButtonCategories_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(CategoriesView));
         }
     }
 }
