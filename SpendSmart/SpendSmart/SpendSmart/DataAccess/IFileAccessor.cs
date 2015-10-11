@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SpendSmart.DataAccess
 {
-    public interface IDataAccessor
+    public interface IFileAccessor
     {
-        Task<List<T>> GetDataAsync<T>();
+        Task<Stream> ReadFileAsync(string path);
 
-        Task SaveDataAsync<T>(List<T> data);
-
-
+        Task<Stream> GetWritableStreamAsync(string path);
 
     }
 }

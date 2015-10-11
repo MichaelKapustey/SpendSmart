@@ -23,7 +23,7 @@ namespace SpendSmart.DataAccess
 
         public async void Save(Category category)
         {
-            await _dataAccessor.SaveDataAsync(category);
+            await _dataAccessor.SaveDataAsync(new List<Category>{ category });
         }
 
     }

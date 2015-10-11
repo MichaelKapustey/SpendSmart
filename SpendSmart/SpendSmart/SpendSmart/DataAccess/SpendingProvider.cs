@@ -20,7 +20,7 @@ namespace SpendSmart.DataAccess
 
         public async void Save(Spending spending)
         {
-            await _dataAccessor.SaveDataAsync(spending);
+            await _dataAccessor.SaveDataAsync(new List<Spending> { spending });
         }
     }
 }

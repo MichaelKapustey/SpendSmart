@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SpendSmart.DataAccess;
+using SpendSmart.Models;
+using SpendSmart.Universal.Logic;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +28,19 @@ namespace SpendSmart.Universal
         public MainPage()
         {
             this.InitializeComponent();
+          
+        }
+
+        public async void Do()
+        {
+            JsonDataAccessor js = new JsonDataAccessor(new FileAccessor());
+            object data=await js.GetDataAsync<Category>();
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Do();
         }
     }
 }

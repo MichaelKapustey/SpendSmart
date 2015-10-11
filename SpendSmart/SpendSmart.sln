@@ -13,12 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpendSmart.WinPhone", "Spen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpendSmart.Universal", "SpendSmart.Universal\SpendSmart.Universal.csproj", "{7C4BDBDD-BC10-4E3E-BC14-2D02579238C9}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SpendSmart.DataAccess", "SpendSmart.DataAccess\SpendSmart.DataAccess.shproj", "{138C1578-E1FF-4988-9DBB-7EA3E8782ABE}"
-EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		SpendSmart.DataAccess\SpendSmart.DataAccess.projitems*{138c1578-e1ff-4988-9dbb-7ea3e8782abe}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
